@@ -1,0 +1,50 @@
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2-console
+
+#sql-logging Standard Output
+#spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+#spring.jpa.properties.hibernate.use_sql_comments=true
+#spring.jpa.properties.hibernate.type.descriptor.sql=trace
+#spring.jpa.properties.hibernate.type=trace
+#spring.jpa.properties.hibernate.SQL=DEBUG
+#spring.jpa.properties.hibernate.type.descriptor.sql.BasicBinder=TRACE
+
+#postgres
+#spring.datasource.url=jdbc:postgresql://localhost:5432/testdb
+#spring.datasource.username=postgres
+#spring.datasource.password=postgres
+#spring.datasource.driver-class-name=org.postgresql.Driver
+#Caused by: java.sql.SQLFeatureNotSupportedException: Method org.postgresql.jdbc.PgConnection.createClob() is not yet implemented
+#spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
+# The SQL dialect makes Hibernate generate better SQL for the chosen database
+#spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+
+# Hibernate ddl auto (create, create-drop, validate, update, none) validate!!!
+# default embedded create-drop
+#spring.jpa.hibernate.ddl-auto=create-drop
+#spring.jpa.hibernate.ddl-auto=update
+
+#logging
+#debug=true
+#too many, do not use
+#trace=true
+
+#log file output
+logging.file=app.log
+#logging.path=./log/
+#logging.level.root=WARN
+#logging.level.com.example.springdatajpasample=debug
+#logging.level.org.apache.tomcat=info
+
+#logging.level.org.hibernate.type.descriptor.sql=trace
+logging.level.org.hibernate.SQL=DEBUG
+logging.level.org.hibernate.type.descriptor.sql.BasicBinder=TRACE
+
+#spring.profiles.active=dev,hsqldb
+#spring.profiles.active=ManyToOne
+#spring.profiles.active=OneToMany
+#spring.main.allow-bean-definition-overriding=true
+
+#to see transaction log
+logging.level.org.springframework.transaction=trace
